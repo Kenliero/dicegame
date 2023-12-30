@@ -5,12 +5,14 @@
 
 .mainTopic {
   color: blue;
+  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 5rem;
 }
 
 .divmain {
+  margin: 0;
   width: 100%;
   height: 10%;
   display: flex;
