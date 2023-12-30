@@ -46,12 +46,24 @@
 }
 
 .playerDivOneInput {
-  display: inline-block;
+  display: inline-flex;
   grid-row-start: 2;
   grid-column-start: 1;
   font-size: 2rem;
   justify-content: center;  
 }
+
+.plrNameOne {
+  justify-content: center;
+  font-size: 2rem;  
+}
+
+.plrNameTwo {
+  justify-content: center;
+  font-size: 2rem;      
+}
+
+
 
 .playerDivTwoLabel {
   grid-row-start: 1;  
@@ -61,7 +73,7 @@
 }
 
 .playerDivTwoInput {
-  display: inline-block;  
+  display: inline-flex;
   grid-row-start: 2;  
   grid-column-start: 2;
   font-size: 2rem;
@@ -70,26 +82,28 @@
 
 
 .diceOneDiv{
+  display: inline-flex;
+  justify-content: center;
   margin: 2rem;
-  /*grid-row-start: 3;
-  grid-column-start: 1; */
   grid-area: 2,1,3,2;  
 }
 
 .diceTwoDiv{
+  display: inline-flex;
+  justify-content: center;
   margin: 2rem;
-  /*grid-row-start: 3;
-  grid-column-start: 2; */
   grid-area: 2,2,3,3;
 }
 
 .dicePicOne {
+  display: inline-flex;
   width: 300px;
   height: 300px;     
   justify-content: center;
 }
 
 .dicePicTwo {
+  display: inline-flex;
   width: 300px;
   height: 300px;
   justify-content: center;         
