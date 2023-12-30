@@ -16,6 +16,13 @@
   align-items: top;
 }
 
+.playersFlex {
+  width: 100vh;
+  height:auto;
+  display: flex;
+  justify-content: center;  
+}
+
 .playersGrid {
   display: Grid;
   width: 100%;
