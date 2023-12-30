@@ -114,7 +114,17 @@
 
 .h1 {
   font-size: 4rem;
-}
+  }
+
+  .plrNameOne {
+    justify-content: center;
+    font-size: 1.9rem;  
+  }
+  
+  .plrNameTwo {
+    justify-content: center;
+    font-size: 1.9rem;      
+  }  
 }
 
 
@@ -123,5 +133,15 @@
 .h1 {
   font-size: 3rem;
 }
-  
+
+.plrNameOne {
+  justify-content: center;
+  font-size: 1.8rem;  
+}
+
+.plrNameTwo {
+  justify-content: center;
+  font-size: 1.8rem;      
+}  
+
 }
