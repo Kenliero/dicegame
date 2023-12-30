@@ -35,25 +35,29 @@
 .playerDivOneLabel {
   grid-row-start: 1;
   grid-column-start: 1;
-  font-size: 1.5rem;  
+  font-size: 2rem;
+  justify-content: center;    
 }
 
 .playerDivOneInput {
   grid-row-start: 2;
   grid-column-start: 1;
-  font-size: 1.5rem;  
+  font-size: 2rem;
+  justify-content: center;  
 }
 
 .playerDivTwoLabel {
   grid-row-start: 1;  
   grid-column-start: 2;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  justify-content: center;   
 }
 
 .playerDivTwoInput {
   grid-row-start: 2;  
   grid-column-start: 2;
-  font-size: 1.5rem;  
+  font-size: 2rem;
+  justify-content: center;      
 }
 
 
