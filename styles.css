@@ -1,5 +1,6 @@
 .html {
   width: 100vh;
+  height: 100%;
 }
 
 .divmain {
@@ -11,9 +12,10 @@
 }
 
 .playersFlex {
-  display: flex;
-  width: 30%;
-  justify-content: center;
+  display: Grid;
+  width: 100%;
+  grid-template-columns: 4;
+  grid-template-rows: 2;
 }
 
 .h1 {
