@@ -77,17 +77,18 @@
     width: 200px;
     height: 200px;      
   }
+}
 
 @media only screen and (max-width: 450px){
 
   .dicePicOne {
-    width: 75px;
-    height: 75px;     
+    width: 100px;
+    height: 100px;     
   }
   
   .dicePicTwo {
-    width: 75px;
-    height: 75px;      
+    width: 100px;
+    height: 100px;      
   }
   
 }
