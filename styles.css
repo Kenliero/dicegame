@@ -10,6 +10,12 @@
   align-items: top;
 }
 
+.playersFlex {
+  display: flex;
+  width: 30%;
+  justify-content: center;
+}
+
 .h1 {
   color: blue;
   font-weight: bold;
