@@ -154,11 +154,18 @@
     justify-content: center;         
   }
 
+  .playerDivOneLabel {
+    font-size: 1.5rem;
+  }
+
+  .playerDivTwoLabel {
+    font-size: 1.5rem;
+  }
 
 }
 
 
-@media only screen and (max-width: 450px){
+@media only screen and (max-width: 520px){
 
 .mainTopic {
   font-size: 2rem;
@@ -200,6 +207,14 @@
   width: 100px;
   height: 100px;
   justify-content: center;         
+}
+
+.playerDivOneLabel {
+  font-size: 1rem;
+}
+
+.playerDivTwoLabel {
+  font-size: 1rem;
 }
 
 }
