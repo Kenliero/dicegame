@@ -41,4 +41,12 @@
   grid-column-start: 2;  
 }
 
+.dicePicOne {
+  grid-row-start: 2;
+  grid-column-start: 1;  
+}
 
+.dicePicTwo {
+  grid-row-start: 2;
+  grid-column-start: 2;  
+}
