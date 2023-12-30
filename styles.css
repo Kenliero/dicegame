@@ -51,33 +51,33 @@
 .dicePicTwo {
   grid-row-start: 2;
   grid-column-start: 2;
-  width: 300px;
-  height: 300px;       
+  width: 500px;
+  height: 500px;       
 }
 
 
 @media only screen and (max-width: 1200px){
 
   .dicePicOne {
-    width: 150px;
-    height: 150px;    
+    width: 300px;
+    height: 300px;    
   }
   
   .dicePicTwo {
-    width: 150px;
-    height: 150px;      
+    width: 300px;
+    height: 300px;      
   }
 
 @media only screen and (max-width: 450px){
 
   .dicePicOne {
-    width: 75px;
-    height: 75px;     
+    width: 100px;
+    height: 100px;     
   }
   
   .dicePicTwo {
-    width: 75px;
-    height: 75px;      
+    width: 100px;
+    height: 100px;      
   }
   
 }
