@@ -120,14 +120,28 @@
   font-size: 3rem;
   }
 
+  .diceOneDiv{
+    display: inline-flex;
+    justify-content: center;
+    margin: 1rem;
+    grid-area: 2,1,3,2;  
+  }
+  
+  .diceTwoDiv{
+    display: inline-flex;
+    justify-content: center;
+    margin: 1rem;
+    grid-area: 2,2,3,3;
+  }  
+
   .plrNameOne {
     justify-content: center;
-    font-size: 1.9rem;  
+    font-size: 1rem;  
   }
   
   .plrNameTwo {
     justify-content: center;
-    font-size: 1.9rem;      
+    font-size: 1rem;      
   }  
 
   .dicePicOne {
@@ -154,14 +168,28 @@
   font-size: 2rem;
 }
 
+.diceOneDiv{
+  display: inline-flex;
+  justify-content: center;
+  margin: 0.5rem;
+  grid-area: 2,1,3,2;  
+}
+
+.diceTwoDiv{
+  display: inline-flex;
+  justify-content: center;
+  margin: 0.5rem;
+  grid-area: 2,2,3,3;
+}
+
 .plrNameOne {
   justify-content: center;
-  font-size: 1.8rem;  
+  font-size: 0.8rem;  
 }
 
 .plrNameTwo {
   justify-content: center;
-  font-size: 1.8rem;      
+  font-size: 0.8rem;      
 }  
 
 .dicePicOne {
