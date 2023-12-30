@@ -38,17 +38,40 @@
 
 .playerDivTwo {
   grid-row-start: 1;  
-  grid-column-start: 2;  
+  grid-column-start: 2;
 }
 
 .dicePicOne {
   grid-row-start: 2;
   grid-column-start: 1;
-  size: 10%;  
+  width: 300px;  
 }
 
 .dicePicTwo {
   grid-row-start: 2;
-  grid-column-start: 2;  
-  size: 10%;  
+  grid-column-start: 2;
+  width: 300px;    
+}
+
+
+@media only screen and (max-width: 1200px){
+
+  .dicePicOne {
+    width: 150px;
+  }
+  
+  .dicePicTwo {
+    width: 150px; 
+  }
+
+@media only screen and (max-width: 450px){
+
+  .dicePicOne {
+    width: 75px;
+  }
+  
+  .dicePicTwo {
+    width: 75px; 
+  }
+  
 }
