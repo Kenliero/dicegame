@@ -44,13 +44,13 @@
 .diceOneDiv{
   margin: 2rem;
   grid-row-start: 2;
-  grid-column-start: 0;
+  grid-column-start: 1;
 }
 
 .diceTwoDiv{
   margin: 2rem;
   grid-row-start: 2;
-  grid-column-start: 1;
+  grid-column-start: 2;
 }
 
 .dicePicOne {
