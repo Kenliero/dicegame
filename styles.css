@@ -2,6 +2,12 @@
   width: 100vh;
 }
 
+.divmain {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+}
+
 .h1 {
   color: blue;
 }
