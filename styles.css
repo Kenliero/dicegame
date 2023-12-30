@@ -27,29 +27,44 @@
   display: Grid;
   width: 100%;
   grid-template-columns: 1fr, 1fr, 1fr;
-  grid-template-rows: 1fr,1fr,1fr;
+  grid-template-rows: 1fr,1fr,1fr,1fr;
   justify-content: center;  
 }
 
-.playerDivOne {
+.playerDivOneLabel {
   grid-row-start: 1;
   grid-column-start: 1;
+  font-size: 1rem;  
 }
 
-.playerDivTwo {
+.playerDivOneInput {
+  grid-row-start: 2;
+  grid-column-start: 1;
+  font-size: 1rem;  
+}
+
+.playerDivTwoLabel {
   grid-row-start: 1;  
   grid-column-start: 2;
+  font-size: 1rem;
 }
+
+.playerDivTwoInput {
+  grid-row-start: 2;  
+  grid-column-start: 2;
+  font-size: 1rem;  
+}
+
 
 .diceOneDiv{
   margin: 2rem;
-  grid-row-start: 2;
+  grid-row-start: 3;
   grid-column-start: 1;
 }
 
 .diceTwoDiv{
   margin: 2rem;
-  grid-row-start: 2;
+  grid-row-start: 3;
   grid-column-start: 2;
 }
 
