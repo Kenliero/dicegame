@@ -3,6 +3,11 @@
   height: 100%;
 }
 
+.h1 {
+  color: blue;
+  font-weight: bold;
+}
+
 .divmain {
   width: 100vh;
   height: 10%;
@@ -18,7 +23,14 @@
   grid-template-rows: 1fr,1fr;
 }
 
-.h1 {
-  color: blue;
-  font-weight: bold;
+.playerDivOne {
+  grid-row-start: 1;
+  grid-column-start: 1;
 }
+
+.playerDivTwo {
+  grid-row-start: 1;  
+  grid-column-start: 2;  
+}
+
+
