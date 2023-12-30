@@ -3,6 +3,10 @@
   height: 100%;
 }
 
+.h1 {
+  font-size: 4rem;
+  }
+
 .mainTopic {
   color: blue;
   margin: 0;
@@ -113,7 +117,7 @@
 @media only screen and (max-width: 1200px){
 
 .h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   }
 
   .plrNameOne {
@@ -147,7 +151,7 @@
 @media only screen and (max-width: 450px){
 
 .h1 {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .plrNameOne {
