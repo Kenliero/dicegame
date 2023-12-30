@@ -5,17 +5,17 @@
 
 .divmain {
   width: 100vh;
-  height: 100%;
+  height: 10%;
   display: flex;
   justify-content: center;
   align-items: top;
 }
 
-.playersFlex {
+.playersGrid {
   display: Grid;
   width: 100%;
-  grid-template-columns: 4;
-  grid-template-rows: 2;
+  grid-template-columns: 1fr, 1fr, 1fr;
+  grid-template-rows: 1fr,1fr;
 }
 
 .h1 {
