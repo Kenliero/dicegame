@@ -9,7 +9,7 @@
 }
 
 .divmain {
-  width: 100vh;
+  width: 100%;
   height: 10%;
   display: flex;
   justify-content: center;
