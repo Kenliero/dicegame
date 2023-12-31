@@ -109,7 +109,7 @@
 @media only screen and (max-width: 1200px){
 
   .mainTopic {
-    font-size: 3rem;
+    font-size: 8rem;
   }  
 /*
   .playerOneLabel {
@@ -152,11 +152,11 @@
 
 @media only screen and (max-width: 520px){
 
+/*
   .mainTopic {
     font-size: 2rem;
   }  
 
-/*
   .playerOneLabel {
     font-size: 1rem;
   }
