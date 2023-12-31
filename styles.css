@@ -53,18 +53,6 @@
   justify-content: center;  
 }
 
-.plrNameOne {
-  justify-content: center;
-  font-size: 2rem;  
-}
-
-.plrNameTwo {
-  justify-content: center;
-  font-size: 2rem;      
-}
-
-
-
 .playerDivTwoLabel {
   grid-row-start: 1;  
   grid-column-start: 2;
@@ -130,12 +118,12 @@
     grid-area: 2,2,3,3;
   }  
 
-  .plrNameOne {
+  .playerDivOneInput {
     justify-content: center;
     font-size: 1rem;  
   }
   
-  .plrNameTwo {
+  .playerDivTwoInput {
     justify-content: center;
     font-size: 1rem;      
   }  
@@ -185,12 +173,12 @@
   grid-area: 2,2,3,3;
 }
 
-.plrNameOne {
+.playerDivOneInput {
   justify-content: center;
   font-size: 0.8rem;  
 }
 
-.plrNameTwo {
+.playerDivTwoInput {
   justify-content: center;
   font-size: 0.8rem;      
 }  
