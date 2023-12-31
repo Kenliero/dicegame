@@ -92,19 +92,13 @@
     font-size: 3rem;
   }  
 
-  .diceOneDiv{
-    display: inline-flex;
-    justify-content: center;
-    margin: 1rem;
-    grid-area: 2,1,3,2;  
+  .playerOneLabel {
+    font-size: 1.5rem;
   }
-  
-  .diceTwoDiv{
-    display: inline-flex;
-    justify-content: center;
-    margin: 1rem;
-    grid-area: 2,2,3,3;
-  }  
+
+  .playerTwoLabel {
+    font-size: 1.5rem;
+  }
 
   .playerOneInput {
     justify-content: center;
@@ -117,7 +111,7 @@
   }  
 
   .dicePicOne {
-    margin: 1rem;
+    margin: 1rem, auto;
     display: inline-flex;
     width: 200px;
     height: 200px;     
@@ -125,76 +119,52 @@
   }
   
   .dicePicTwo {
-    margin: 1rem;
+    margin: 1rem, auto;
     display: inline-flex;
     width: 200px;
     height: 200px;
     justify-content: center;         
   }
-
-  .playerOneLabel {
-    font-size: 1.5rem;
-  }
-
-  .playerTwoLabel {
-    font-size: 1.5rem;
-  }
-
 }
 
 
 @media only screen and (max-width: 520px){
 
-.mainTopic {
-  font-size: 2rem;
-}  
+  .mainTopic {
+    font-size: 2rem;
+  }  
 
-.diceOneDiv{
-  display: inline-flex;
-  justify-content: center;
-  margin: 0.5rem;
-  grid-area: 2,1,3,2;  
-}
+  .playerOneLabel {
+    font-size: 1rem;
+  }
 
-.diceTwoDiv{
-  display: inline-flex;
-  justify-content: center;
-  margin: 0.5rem;
-  grid-area: 2,2,3,3;
-}
+  .playerTwoLabel {
+    font-size: 1rem;
+  }
 
-.playerOneInput {
-  justify-content: center;
-  font-size: 0.8rem;  
-}
+  .playerOneInput {
+    justify-content: center;
+    font-size: 0.8rem;  
+  }
 
-.playerTwoInput {
-  justify-content: center;
-  font-size: 0.8rem;      
-}  
+  .playerTwoInput {
+    justify-content: center;
+    font-size: 0.8rem;      
+  }  
 
-.dicePicOne {
-  margin: 0.5rem;
-  display: inline-flex;
-  width: 100px;
-  height: 100px;     
-  justify-content: center;
-}
+  .dicePicOne {
+    margin: 0.5rem, auto;
+    display: inline-flex;
+    width: 100px;
+    height: 100px;     
+    justify-content: center;
+  }
 
-.dicePicTwo {
-  margin: 0.5rem;
-  display: inline-flex;
-  width: 100px;
-  height: 100px;
-  justify-content: center;         
-}
-
-.playerOneLabel {
-  font-size: 1rem;
-}
-
-.playerTwoLabel {
-  font-size: 1rem;
-}
-
+  .dicePicTwo {
+    margin: 0.5rem, auto;
+    display: inline-flex;
+    width: 100px;
+    height: 100px;
+    justify-content: center;         
+  }
 }
