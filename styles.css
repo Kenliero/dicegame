@@ -3,6 +3,10 @@
   height: 100%;
 }
 
+.body {
+  background-color: rgb(63, 113, 129);
+}
+
 .mainTopic {
   color: blue;
   margin: 0;
