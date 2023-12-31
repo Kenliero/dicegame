@@ -38,14 +38,14 @@
   justify-content: center;  
 }
 
-.playerDivOneLabel {
+.playerOneLabel {
   grid-row-start: 1;
   grid-column-start: 1;
   font-size: 2rem;
   justify-content: center;    
 }
 
-.playerDivOneInput {
+.playerOneInput {
   display: inline-flex;
   grid-row-start: 2;
   grid-column-start: 1;
@@ -53,14 +53,14 @@
   justify-content: center;  
 }
 
-.playerDivTwoLabel {
+.playerTwoLabel {
   grid-row-start: 1;  
   grid-column-start: 2;
   font-size: 2rem;
   justify-content: center;   
 }
 
-.playerDivTwoInput {
+.playerTwoInput {
   display: inline-flex;
   grid-row-start: 2;  
   grid-column-start: 2;
@@ -69,24 +69,11 @@
 }
 
 
-.diceOneDiv{
-  display: inline-flex;
-  justify-content: center;
-  margin: 2rem;
-  grid-area: 2,1,3,2;  
-}
-
-.diceTwoDiv{
-  display: inline-flex;
-  justify-content: center;
-  margin: 2rem;
-  grid-area: 2,2,3,3;
-}
-
 .dicePicOne {
   display: inline-flex;
   width: 300px;
   height: 300px;     
+  margin: 2rem;
   justify-content: center;
 }
 
@@ -94,6 +81,7 @@
   display: inline-flex;
   width: 300px;
   height: 300px;
+  margin: 2rem;
   justify-content: center;         
 }
 
@@ -118,17 +106,18 @@
     grid-area: 2,2,3,3;
   }  
 
-  .playerDivOneInput {
+  .playerOneInput {
     justify-content: center;
     font-size: 1rem;  
   }
   
-  .playerDivTwoInput {
+  .playerTwoInput {
     justify-content: center;
     font-size: 1rem;      
   }  
 
   .dicePicOne {
+    margin: 1rem;
     display: inline-flex;
     width: 200px;
     height: 200px;     
@@ -136,17 +125,18 @@
   }
   
   .dicePicTwo {
+    margin: 1rem;
     display: inline-flex;
     width: 200px;
     height: 200px;
     justify-content: center;         
   }
 
-  .playerDivOneLabel {
+  .playerOneLabel {
     font-size: 1.5rem;
   }
 
-  .playerDivTwoLabel {
+  .playerTwoLabel {
     font-size: 1.5rem;
   }
 
@@ -173,17 +163,18 @@
   grid-area: 2,2,3,3;
 }
 
-.playerDivOneInput {
+.playerOneInput {
   justify-content: center;
   font-size: 0.8rem;  
 }
 
-.playerDivTwoInput {
+.playerTwoInput {
   justify-content: center;
   font-size: 0.8rem;      
 }  
 
 .dicePicOne {
+  margin: 0.5rem;
   display: inline-flex;
   width: 100px;
   height: 100px;     
@@ -191,17 +182,18 @@
 }
 
 .dicePicTwo {
+  margin: 0.5rem;
   display: inline-flex;
   width: 100px;
   height: 100px;
   justify-content: center;         
 }
 
-.playerDivOneLabel {
+.playerOneLabel {
   font-size: 1rem;
 }
 
-.playerDivTwoLabel {
+.playerTwoLabel {
   font-size: 1rem;
 }
 
