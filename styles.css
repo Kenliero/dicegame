@@ -17,7 +17,7 @@
   font-family: 'Dancing Script', cursive;
   font-weight: bold;
   align-items: center;
-  font-size: 8rem;  
+  font-size: 10rem;  
 }
 
 .divmain {
@@ -66,8 +66,9 @@
   display: inline-flex;
   grid-column: 1 / 2;
   grid-row: 2 / 3;
+  width: 70%;    
   font-size: 2.2rem;
-  text-align: center;
+  text-align: center;   
   justify-content: center;  
 }
 
@@ -75,6 +76,7 @@
   display: inline-flex;
   grid-column: 2 / 3;
   grid-row: 2 / 3;
+  width: 70%;    
   font-size: 2.2rem;
   text-align: center;  
   justify-content: center;      
