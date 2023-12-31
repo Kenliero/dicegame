@@ -105,11 +105,9 @@
     font-size: 8rem;
   }  
 
-/*
-
   .playerOneInput {
     justify-content: center;
-    /*font-size: 1.5rem; 
+    font-size: 1.5rem; 
   }
   
   .playerTwoInput {
@@ -117,7 +115,6 @@
     font-size: 1.5rem;
   }  
 
-  */
 
   .dicePicOne {
     margin: auto;
