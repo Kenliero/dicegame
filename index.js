@@ -1,10 +1,3 @@
-// document.querySelector("h1").textContent = "hi";
-/*
-var nameOne = "";
-var fullNameOne ='';       
-var nameTwo = "";
-var fullNameTwo ='';  
-*/
 
 function getNameOne() {
     const x = document.getElementById("oneInputId");
