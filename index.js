@@ -41,8 +41,7 @@ function addButtons(){
         document.getElementById("oneInputId").outerHTML = button1New;     
         document.getElementById("butt1").classList.add("rollButton1");
         document.getElementById("butt1").addEventListener('click', rollDice1());
-        //myButton.addEventListener("click", passIntoEvtListener.bind(someString));
-        console.log(document.getElementById("oneInputId"));  
+        console.log(document.getElementById("butt1"));  
         document.getElementById("twoInputId").outerHTML = button2New;
         document.getElementById("butt2").classList.add("rollButton2");
         document.getElementById("butt2").addEventListener('click', rollDice2());
