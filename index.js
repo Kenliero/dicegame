@@ -7,7 +7,7 @@ var fullNameTwo ='';
 */
 
 function getNameOne() {
-    const x = document.getElementById("playerOneInput");
+    const x = document.getElementByClass("playerOneInput");
     const z = document.getElementById("oneDiv");    
     var nameTwo = x.value;
     var fullNameOne ='<label class="playerOneLabel">{nameOne}</label>';
@@ -15,7 +15,7 @@ function getNameOne() {
 }
 
 function getNameTwo() {
-    const x = document.getElementById("playerTwoInput");    
+    const x = document.getElementByClass("playerTwoInput");    
     const z = document.getElementById("twoDiv");
     var nameTwo = x.value;
     var fullNameTwo ='<label class="playerTwoLabel">{nameTwo}</label>';
