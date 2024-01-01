@@ -40,22 +40,26 @@ function addButtons(){
         console.log(document.getElementById("oneInputId"));          
         document.getElementById("oneInputId").outerHTML = button1New;     
         document.getElementById("butt1").classList.add("rollButton1");
+        document.getElementById("butt1").addEventListener('click', rollDice1());
+        //myButton.addEventListener("click", passIntoEvtListener.bind(someString));
         console.log(document.getElementById("oneInputId"));  
         document.getElementById("twoInputId").outerHTML = button2New;
         document.getElementById("butt2").classList.add("rollButton2");
+        document.getElementById("butt2").addEventListener('click', rollDice2());
         buttonsAvailable = true;      
-    } else {
-        document.getElementById("butt1").outerHTML = button1Old;
-        document.getElementById("oneInputId").classList.remove("rollButton1");  
-        document.getElementById("butt2").outerHTML = button2Old;
-        document.getElementById("twoInputId").classList.remove("rollButton2");
-        buttonsAvailable = false;            
-    }
+        } else {
+            document.getElementById("butt1").outerHTML = button1Old;
+            document.getElementById("oneInputId").classList.remove("rollButton1");  
+            document.getElementById("butt2").outerHTML = button2Old;
+            document.getElementById("twoInputId").classList.remove("rollButton2");
+            buttonsAvailable = false;            
+        }
     console.log(button1New);
     console.log(button2New);                     
-}
+    }
 
 function rollDice1(){
+    console.log*(turn1Used);
     if (!turn1Used) {
      var diceNum = Math.floor(Math.random() * 6) + 1;
      turn1Used = true;
@@ -65,6 +69,7 @@ function rollDice1(){
 }
 
 function rollDice2(){
+    console.log*(turn2Used);
     if (!turn2Used) {    
     var diceNum = Math.floor(Math.random() * 6) + 1;
     turn2Used = true;
