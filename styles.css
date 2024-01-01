@@ -65,7 +65,7 @@
   justify-content: center;
 }
 
-.playerOneInput {
+#oneInputId {
   display: inline-flex;
   grid-column: 1 / 2;
   grid-row: 2 / 3;
@@ -79,7 +79,7 @@
 }
 
 
-.playerTwoInput {
+#twoInputId {
   display: inline-flex;
   grid-column: 2 / 3;
   grid-row: 2 / 3;
@@ -114,12 +114,12 @@
     font-size: 8rem;
   }  
 
-  .playerOneInput {
+  #oneInputId {
     justify-content: center;
     font-size: 1.5rem; 
   }
   
-  .playerTwoInput {
+  #twoInputId {
     justify-content: center;
     font-size: 1.5rem;
   }  
@@ -143,12 +143,12 @@
 
 @media only screen and (max-width: 520px){
 
-  .playerOneInput {
+  #oneInputId {
     justify-content: center;
     font-size: 0.8rem;  
   }
 
-  .playerTwoInput {
+  #twoInputId {
     justify-content: center;
     font-size: 0.8rem;      
   }  
