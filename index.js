@@ -29,5 +29,6 @@ function getNameTwo() {
 function addButton(){
     const x = document.getElementById("oneDiv");
     console.log(x);
+    x.classList.add("rollButton");
     // oneInputId
 }
