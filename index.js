@@ -37,16 +37,18 @@ function getNameTwo() {
 
 function addButtons(){  
     if (!buttonsAvailable) {
-        document.getElementById("oneInputId").outerHTML = button1New;
-        document.getElementById("oneInputId").classList.add("rollButton1");  
+        console.log(document.getElementById("oneInputId"));          
+        document.getElementById("oneInputId").outerHTML = button1New;     
+        document.getElementById("butt1").classList.add("rollButton1");
+        console.log(document.getElementById("oneInputId"));  
         document.getElementById("twoInputId").outerHTML = button2New;
-        document.getElementById("twoInputId").classList.add("rollButton2");
+        document.getElementById("butt2").classList.add("rollButton2");
         buttonsAvailable = true;      
     } else {
         document.getElementById("butt1").outerHTML = button1Old;
-        document.getElementById("butt1").classList.remove("rollButton1");  
+        document.getElementById("oneInputId").classList.remove("rollButton1");  
         document.getElementById("butt2").outerHTML = button2Old;
-        document.getElementById("butt2").classList.remove("rollButton2");
+        document.getElementById("twoInputId").classList.remove("rollButton2");
         buttonsAvailable = false;            
     }
     console.log(button1New);
