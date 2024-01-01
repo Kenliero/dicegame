@@ -4,8 +4,8 @@ let nameTwoGiven = false;
 //const eButtonTwo = document.getElementById("twoInputId");
 var button1Old="<input type='text' id='oneInputId' placeholder='Your Name' onchange='getNameOne()'>";
 var button2Old="<input type='text' id='twoInputId' placeholder='Your Name' onchange='getNameTwo()'>";
-var button1New="<button onclick='rollDice1()' id='butt1'>Roll Dice One</button>"
-var button2New="<button onclick='rollDice2()' id='butt2'>Roll Dice Two</button>"
+var button1New="<button onclick='rollDice1()' id='butt1' class='btn btn-success border-dark btn-lg px-4 mb-4'>Roll Dice One</button>"
+var button2New="<button onclick='rollDice2()' id='butt2' class='btn btn-success border-dark btn-lg px-4 mb-4'>Roll Dice Two</button>"
 let buttonsAvailable = false;
 let turn1Used = false;
 let turn2Used = false;
@@ -52,9 +52,7 @@ function addButtons(){
         buttonsAvailable = false;            
     }
     console.log(button1New);
-    console.log(button2New);        
-    console.log(eButtonOne);
-    console.log(eButtonTwo);             
+    console.log(button2New);                     
 }
 
 function rollDice1(){
