@@ -1,11 +1,14 @@
 let nameOneGiven = false;
 let nameTwoGiven = false;
-const origButtonOne = document.getElementById("labelOne");
-const origButtonTwo = document.getElementById("labelTwo");
-var button1Old="<label id='labelOne'>Name1</label>";
-var button2Old="<label id='labelTwo'>Name2</label>";
-var button1New="<button onclick = 'rollDice1()'>Roll Dice One</button>"
-var button2New="<button onclick = 'rollDice2()'>Roll Dice Two</button>"
+const eButtonOne = document.getElementById("oneInputId");
+const eButtonTwo = document.getElementById("twoInputId");
+var button1Old="<input type='text' id='oneInputId' placeholder='Your Name' onchange='getNameOne()'>";
+var button2Old="<input type='text' id='twoInputId' placeholder='Your Name' onchange='getNameTwo()'>";
+var button1New="<button onclick='rollDice1()' id='butt1'>Roll Dice One</button>"
+var button2New="<button onclick='rollDice2()' id='butt2'>Roll Dice Two</button>"
+let buttonsAvailable = false;
+let turn1Used = false;
+let turn2Used = false;
 
 
 function getNameOne() {
@@ -32,17 +35,28 @@ function getNameTwo() {
     }    
 }
 
-function addButtons(){
-    const inp1 = origButtonOne;
-    const inp2 = origButtonTwo;    
-    console.log(inp1);
-    console.log(inp2);    
-    document.getElementById('labelOne').outerHTML = button1New;
-    document.getElementById('labelTwo').outerHTML = button2New;    
-    x.classList.add("rollButton");    
-    // oneInputId
+function addButtons(){  
+    if (!buttonsAvailable) {
+        eButtonOne.outerHTML = button1New;
+        eButtonOne.classList.add("rollButton1");  
+        eButtonTwo.outerHTML = button2New;
+        eButtonTwo.classList.add("rollButton2");      
+    } else {
+        eButtonOne.outerHTML = button1Old;
+        eButtonOne.classList.remove("rollButton1");  
+        eButtonTwo.outerHTML = button2Old;
+        eButtonTwo.classList.remove("rollButton2");            
+    }
+    console.log(button1New);
+    console.log(button2New);        
+    console.log(eButtonOne);
+    console.log(eButtonTwo);             
 }
 
 function rollDice1(){
      // oneInputId   
+}
+
+function rollDice2(){
+    // oneInputId   
 }
