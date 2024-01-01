@@ -3,7 +3,7 @@ function getNameOne() {
     const x = document.getElementById("oneInputId");
     const z = document.getElementById("oneDiv");    
     var nameTwo = x.value;
-    var fullNameOne ='<label id="labelOne">${nameOne}</label>';
+    var fullNameOne ="<label id='labelOne'>${nameOne}</label>";
     console.log(fullNameOne);
     document.getElementById('labelOne').outerHTML = fullNameOne;
 }
