@@ -116,7 +116,7 @@
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  grid-area: 2 / 1 / 3 / 2;
+  /*grid-area: 2 / 1 / 3 / 2;*/
 }
 
 .rollButton2 {
@@ -129,7 +129,7 @@
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  grid-area: 2 / 2 / 3 / 3;
+  /*grid-area: 2 / 2 / 3 / 3;*/
 }
 
 
