@@ -12,7 +12,7 @@ function getNameTwo() {
     const x = document.getElementById("twoInputId");    
     const z = document.getElementById("twoDiv");
     var nameTwo = x.value;
-    var fullNameTwo ='<label id="labelTwo">${$nameTwo}</label>';
+    var fullNameTwo ='<label id="labelTwo">${nameTwo}</label>';
     console.log(fullNameTwo);    
     document.getElementById('labelTwo').outerHTML = fullNameTwo;     
 }
