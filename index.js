@@ -11,6 +11,7 @@ function getNameOne() {
     const z = document.getElementById("oneDiv");    
     var nameTwo = x.value;
     var fullNameOne ='<label class="playerOneLabel">{nameOne}</label>';
+    console.log(fullNameOne);
     document.getElementById('playerOneLabel').outerHTML = fullNameOne;
 }
 
@@ -19,5 +20,6 @@ function getNameTwo() {
     const z = document.getElementById("twoDiv");
     var nameTwo = x.value;
     var fullNameTwo ='<label class="playerTwoLabel">{nameTwo}</label>';
+    console.log(fullNameTwo);    
     document.getElementById('playerTwoLabel').outerHTML = fullNameTwo;     
 }
