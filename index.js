@@ -1,7 +1,7 @@
 let nameOneGiven = false;
 let nameTwoGiven = false;
-const eButtonOne = document.getElementById("oneInputId");
-const eButtonTwo = document.getElementById("twoInputId");
+//const eButtonOne = document.getElementById("oneInputId");
+//const eButtonTwo = document.getElementById("twoInputId");
 var button1Old="<input type='text' id='oneInputId' placeholder='Your Name' onchange='getNameOne()'>";
 var button2Old="<input type='text' id='twoInputId' placeholder='Your Name' onchange='getNameTwo()'>";
 var button1New="<button onclick='rollDice1()' id='butt1'>Roll Dice One</button>"
@@ -37,16 +37,16 @@ function getNameTwo() {
 
 function addButtons(){  
     if (!buttonsAvailable) {
-        eButtonOne.outerHTML = button1New;
-        eButtonOne.classList.add("rollButton1");  
-        eButtonTwo.outerHTML = button2New;
-        eButtonTwo.classList.add("rollButton2");
+        document.getElementById("oneInputId").outerHTML = button1New;
+        document.getElementById("oneInputId").classList.add("rollButton1");  
+        document.getElementById("twoInputId").outerHTML = button2New;
+        document.getElementById("twoInputId").classList.add("rollButton2");
         buttonsAvailable = true;      
     } else {
-        eButtonOne.outerHTML = button1Old;
-        eButtonOne.classList.remove("rollButton1");  
-        eButtonTwo.outerHTML = button2Old;
-        eButtonTwo.classList.remove("rollButton2");
+        document.getElementById("butt1").outerHTML = button1Old;
+        document.getElementById("butt1").classList.remove("rollButton1");  
+        document.getElementById("butt2").outerHTML = button2Old;
+        document.getElementById("butt2").classList.remove("rollButton2");
         buttonsAvailable = false;            
     }
     console.log(button1New);
