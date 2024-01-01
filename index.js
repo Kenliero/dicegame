@@ -56,9 +56,19 @@ function addButtons(){
 }
 
 function rollDice1(){
-     // oneInputId   
+    if (!turn1Used) {
+     var diceNum = Math.floor(Math.random() * 6) + 1;
+     turn1Used = true;
+     console.log*(diceNum);
+     console.log*(turn1Used);        
+    }
 }
 
 function rollDice2(){
-    // oneInputId   
+    if (!turn2Used) {    
+    var diceNum = Math.floor(Math.random() * 6) + 1;
+    turn2Used = true;
+    console.log*(diceNum); 
+    console.log*(turn2Used);        
+    }     
 }
