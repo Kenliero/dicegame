@@ -57,18 +57,28 @@ function addButtons(){
     console.log(button2New);                     
     }
 
-function rollDice1(){
-    if (!turn1Used) {
-     var diceNum = Math.floor(Math.random() * 6) + 1;
-     turn1Used = true;
-     console.log(diceNum);       
+    function rollDice1(){
+        if (!turn1Used){
+          turn1Used = true;
+          Replacedice(1);
+        } else {
+          return;
+        }        
     }
-}
 
-function rollDice2(){
-    if (!turn2Used) {    
-    var diceNum = Math.floor(Math.random() * 6) + 1;
-    turn2Used = true;
-    console.log(diceNum);  
-    }     
-}
+    function rollDice2(){
+        if (!turn2Used) {
+            turn2Used = true;
+            Replacedice(2);
+        } else {
+            return;
+        }        
+    }
+    
+    Replacedice(currentdice) {
+        var diceNum = Math.floor(Math.random() * 6) + 1;
+        console.log(diceNum);
+        var picName = diceNum + ".jpg";
+        console.log(picName);
+        return;    
+    }
