@@ -76,9 +76,28 @@ function addButtons(){
     }
     
     function replaceDice(currentdice) {
-        var diceNum = Math.floor(Math.random() * 6) + 1;
-        console.log(diceNum);
-        var picName = diceNum + ".jpg";
-        console.log(picName);
-        return;    
+      var diceNum = Math.floor(Math.random() * 6) + 1;
+      console.log("Roll Result is: " + diceNum);
+      var picPath = "./images/" + diceNum + ".png";
+      console.log("Path of the pic is: " + picPath);
+      console.log("Dice is: " + currentdice);
+      if (currentdice === 1) {
+          var basicElement = document.getElementsByClassName("dicePicOne");
+        } else {
+          var basicElement = document.getElementsByClassName("dicePicTwo");  
+        }
+      for (var i = 0; i < basicElement.length; i++) {
+        basicElement[i].src = picPath;    
+      }
+
+      if (turn1Used && turn2Used) {
+          /* display winner */
+          return;
+        } else if (turn1Used) {
+          /* turn dice 1 yellow */
+          return;
+        } else {
+          /* turn dice 2 yellow */
+          return;
+        }
     }
