@@ -10,21 +10,28 @@
 }
 
 .mainTopic {
-  color: rgb(100, 184, 209);
+  /* color: rgb(100, 184, 209); */
+  color: rgb(255, 255, 255); 
   margin: 0;
   font-family: 'Dancing Script', cursive;
   font-weight: bold;
   align-items: center;
   font-size: 10rem;
-  text-shadow: 2px 2px 10px black; 
+  text-shadow: 5px 5px 15px black; 
 
 }
 
+.gradient {
+  height: 150px;
+  background: linear-gradient(to right, rgb(89, 208, 255), rgba(255, 122, 89,0));
+}
+
 .divmain {
+  /*
   background-image:url('./images/whitesnow.jpg');
   background-repeat:repeat-x;  
   background-position:center;
-  background-size: cover;
+  background-size: cover;*/
   background-color: rgb(255, 255, 255);
   margin: 0;
   width: 100%;
@@ -35,12 +42,11 @@
 }
 
 .playersFlex {
- 
   background-image:url('./images/icy-texture.jpg');
   background-repeat:repeat-x;  
   background-position:center;
-  background-size: cover;
-  background-color: rgb(100, 184, 209);    
+  background-size: cover; 
+  background-color: rgb(100, 184, 209);
   /*margin-top: 4rem;*/
   width: 100%;
   height:auto;
@@ -49,9 +55,6 @@
 }
 
 .playersGrid {
-  border: 10px;
-  border-color: black;
-  border-radius: 10%;
   display: inline-Grid;
   width: 100%;
   grid-template-columns: 2fr, 2fr;
@@ -66,7 +69,7 @@
   font-size: 3rem;
   color: rgb(186, 242, 250);
   text-align: center;
-  text-shadow: 3px 3px 20px rgb(10, 11, 77); 
+  text-shadow: 10px 10px 10px rgb(10, 11, 77); 
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;   
 }
 
@@ -76,7 +79,7 @@
   font-size: 3rem;
   color: rgb(186, 242, 250);
   text-align: center;
-  text-shadow: 2px 3px 20px rgb(10, 11, 77); 
+  text-shadow: 10px 10px 10px rgb(10, 11, 77); 
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;       
 }
 
