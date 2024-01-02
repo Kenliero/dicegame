@@ -40,11 +40,11 @@ function addButtons(){
         console.log(document.getElementById("oneInputId"));          
         document.getElementById("oneInputId").outerHTML = button1New;     
         document.getElementById("butt1").classList.add("rollButton1");
-        document.getElementById("butt1").addEventListener('click', rollDice1());
+        document.getElementById("butt1").addEventListener('click', rollDice1);
         console.log(document.getElementById("butt1"));  
         document.getElementById("twoInputId").outerHTML = button2New;
         document.getElementById("butt2").classList.add("rollButton2");
-        document.getElementById("butt2").addEventListener('click', rollDice2());
+        document.getElementById("butt2").addEventListener('click', rollDice2);
         buttonsAvailable = true;      
         } else {
             document.getElementById("butt1").outerHTML = button1Old;
@@ -58,21 +58,17 @@ function addButtons(){
     }
 
 function rollDice1(){
-    console.log*(turn1Used);
     if (!turn1Used) {
      var diceNum = Math.floor(Math.random() * 6) + 1;
      turn1Used = true;
-     console.log*(diceNum);
-     console.log*(turn1Used);        
+     console.log(diceNum);       
     }
 }
 
 function rollDice2(){
-    console.log*(turn2Used);
     if (!turn2Used) {    
     var diceNum = Math.floor(Math.random() * 6) + 1;
     turn2Used = true;
-    console.log*(diceNum); 
-    console.log*(turn2Used);        
+    console.log(diceNum);  
     }     
 }
