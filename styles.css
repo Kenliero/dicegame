@@ -16,11 +16,12 @@
   font-weight: bold;
   align-items: center;
   font-size: 10rem;
-  text-shadow: 2px 2px 10px black;  
+  text-shadow: 2px 2px 10px black; 
+
 }
 
 .divmain {
-  background-image:url('./images/icy-texture.jpg');
+  background-image:url('./images/whitesnow.jpg');
   background-repeat:repeat-x;  
   background-position:center;
   background-size: cover;
@@ -35,7 +36,7 @@
 
 .playersFlex {
  
-  background-image:url('./images/snowcrystals.jpg');
+  background-image:url('./images/icy-texture.jpg');
   background-repeat:repeat-x;  
   background-position:center;
   background-size: cover;
@@ -48,6 +49,9 @@
 }
 
 .playersGrid {
+  border: 10px;
+  border-color: black;
+  border-radius: 10%;
   display: inline-Grid;
   width: 100%;
   grid-template-columns: 2fr, 2fr;
