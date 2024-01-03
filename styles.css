@@ -131,6 +131,27 @@
   margin: auto;
 }
 
+#butt1 {
+  --bs-btn-padding-y: 3rem!important;
+  --bs-btn-padding-x: 2.5rem!important;
+  --bs-btn-font-size: 2rem!important;
+  --bs-btn-border-radius: 50%!important;
+  background-color: #25aa6c;
+  /*--bs-btn-bg: #25aa6c;*/
+  text-shadow: 1px 1px 1px rgb(3, 2, 73);  
+  }
+
+#butt2 {
+  --bs-btn-padding-y: 3rem!important;
+  --bs-btn-padding-x: 2.5rem!important;
+  --bs-btn-font-size: 2rem!important;
+  --bs-btn-border-radius: 50%!important;
+  --bs-btn-bg: #25aa6c;
+  text-shadow: 1px 1px 1px rgb(3, 2, 73);  
+  }
+
+
+
 .rollButton1 {
   font-size: 32px;
 }

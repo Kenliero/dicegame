@@ -61,6 +61,12 @@ function addButtons(){
         if (!turn1Used){
           turn1Used = true;
           replaceDice(1);
+          if (turn2Used) {
+            document.getElementById("butt1").style.backgroundColor = "red";
+            document.getElementById("butt2").style.backgroundColor = "red";          
+            } else {
+              document.getElementById("butt1").style.backgroundColor = "yellow";
+            }          
         } else {
           return;
         }        
@@ -70,6 +76,12 @@ function addButtons(){
         if (!turn2Used) {
             turn2Used = true;
             replaceDice(2);
+            if (turn1Used) {
+              document.getElementById("butt1").style.backgroundColor = "red";
+              document.getElementById("butt2").style.backgroundColor = "red";          
+              } else {
+                document.getElementById("butt2").style.backgroundColor = "yellow";
+              }     
         } else {
             return;
         }        
