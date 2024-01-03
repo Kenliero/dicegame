@@ -10,7 +10,6 @@
 }
 
 .mainTopic {
-  /* color: rgb(100, 184, 209); */
   color: rgb(255, 255, 255); 
   margin: 0;
   font-family: 'Dancing Script', cursive;
@@ -22,7 +21,6 @@
 }
 
 .winnerTopic {
-  /*color: rgb(255, 255, 255); */
   color: rgb(255, 0, 255);   
   margin: 0;
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -38,11 +36,6 @@
 }
 
 .divmain {
-  /*
-  background-image:url('./images/whitesnow.jpg');
-  background-repeat:repeat-x;  
-  background-position:center;
-  background-size: cover;*/
   background-color: rgb(255, 255, 255);
   margin: 0;
   width: 100%;
@@ -81,8 +74,7 @@
 
 #restartButton {
   font-size: 4rem;
-  width: auto;
-  height: 8rem;
+  height: 12rem;
   border: 4rem;
   border-radius: 50%;
   color: darkblue;
@@ -93,9 +85,10 @@
   grid-row: 4;
   grid-column: 1;
   grid-column: span 2; /* Span across both columns */
-  width: 40%;
+  width: 20%;
   margin: auto; /* Center horizontally */
   display: block; /* Make it a block-level element for margin auto to work */
+  text-align: center;
 }
 
 #labelOne {
@@ -226,6 +219,11 @@
     width: 250px;
     height: 250px;
   }
+
+  #restartButton {
+    font-size: 2rem!important;
+  }
+
 }
 
 
@@ -254,4 +252,9 @@
     width: 130px;
     height: 130px;
   }
+
+  #restartButton {
+    font-size: 1.2rem!important;
+  }
+
 }
