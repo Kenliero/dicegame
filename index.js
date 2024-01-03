@@ -9,11 +9,15 @@ var button2New="<button onclick='rollDice2()' id='butt2' class='btn btn-success 
 let buttonsAvailable = false;
 let turn1Used = false;
 let turn2Used = false;
+var diceResult1 = 6;
+var diceResult2 = 6;
+var nameOne = "";
+var nameTwo = "";
 
 
 function getNameOne() {
     const x = document.getElementById("oneInputId");
-    var nameOne = x.value;
+    nameOne = x.value;
     var fullNameOne ="<label id='labelOne'>" + nameOne + "</label>";
     console.log(fullNameOne);
     document.getElementById('labelOne').outerHTML = fullNameOne;
@@ -25,7 +29,7 @@ function getNameOne() {
 
 function getNameTwo() {
     const x = document.getElementById("twoInputId");    
-    var nameTwo = x.value;
+    nameTwo = x.value;
     var fullNameTwo ="<label id='labelTwo'>" + nameTwo + "</label>";
     console.log(fullNameTwo);    
     document.getElementById('labelTwo').outerHTML = fullNameTwo;
@@ -63,7 +67,7 @@ function addButtons(){
           replaceDice(1);
           if (turn2Used) {
             document.getElementById("butt1").style.backgroundColor = "red";
-            document.getElementById("butt2").style.backgroundColor = "red";          
+            document.getElementById("butt2").style.backgroundColor = "red";         
             } else {
               document.getElementById("butt1").style.backgroundColor = "yellow";
             }          
@@ -88,15 +92,17 @@ function addButtons(){
     }
     
     function replaceDice(currentdice) {
-      var diceNum = Math.floor(Math.random() * 6) + 1;
-      console.log("Roll Result is: " + diceNum);
-      var picPath = "./images/" + diceNum + ".png";
+      var dicenum = Math.floor(Math.random() * 6) + 1;
+      console.log("Roll Result is: " + dicenum);
+      var picPath = "./images/" + dicenum + ".png";
       console.log("Path of the pic is: " + picPath);
       console.log("Dice is: " + currentdice);
       if (currentdice === 1) {
           var basicElement = document.getElementsByClassName("dicePicOne");
+          diceResult1 = dicenum;
         } else {
-          var basicElement = document.getElementsByClassName("dicePicTwo");  
+          var basicElement = document.getElementsByClassName("dicePicTwo");
+          diceResult2 = dicenum;  
         }
       for (var i = 0; i < basicElement.length; i++) {
         basicElement[i].src = picPath;    
@@ -104,6 +110,7 @@ function addButtons(){
 
       if (turn1Used && turn2Used) {
           /* display winner */
+          declareWinner(diceResult1, diceResult2);
           return;
         } else if (turn1Used) {
           /* turn dice 1 yellow */
@@ -113,3 +120,15 @@ function addButtons(){
           return;
         }
     }
+
+    function declareWinner(dice1, dice2) {
+      if (dice1 === dice2) {var winnerTopic ="<h1 class='display-7 fw-bold mainTopic'>DRAW!!!</h1>";
+        } else if (dice1 > dice2) {var winnerTopic ="<h1 class='display-7 fw-bold mainTopic'>" + "The Winner is: " + nameOne + "!!!</h1>";
+        } else {var winnerTopic ="<h1 class='display-7 fw-bold mainTopic'>" + "The Winner is: " + nameTwo + "!!!</h1>";
+        }
+      document.getElementsByClassName('mainTopic')[0].outerHTML = winnerTopic;
+      /* log */
+      console.log(document.getElementsByClassName('mainTopic')[0].outerHTML);  
+      document.getElementsByClassName('mainTopic')[0].classList.toggle("winnerTopic"); 
+      document.getElementById("restartButton").style.visibility = "visible";          
+      }

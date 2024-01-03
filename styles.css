@@ -16,9 +16,20 @@
   font-family: 'Dancing Script', cursive;
   font-weight: bold;
   align-items: center;
-  font-size: 10rem;
+  font-size: 9rem;
   text-shadow: 5px 5px 15px black; 
 
+}
+
+.winnerTopic {
+  /*color: rgb(255, 255, 255); */
+  color: rgb(255, 0, 255);   
+  margin: 0;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight:bold;
+  align-items: center;
+  font-size: 9rem;
+  text-shadow: 10px 10px 30px black; 
 }
 
 .gradient {
@@ -61,6 +72,30 @@
   grid-template-rows: 1fr,1fr,1fr,1fr;
   gap: 2rem;
   justify-content: space-between;
+}
+
+#restartFlex {
+  display:flex;
+  justify-content: center;
+}
+
+#restartButton {
+  font-size: 4rem;
+  width: auto;
+  height: 8rem;
+  border: 4rem;
+  border-radius: 50%;
+  color: darkblue;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  visibility: hidden;
+  background-color: #25aa6c;
+  text-shadow: 1px 1px 1px rgb(255, 255, 255);
+  grid-row: 4;
+  grid-column: 1;
+  grid-column: span 2; /* Span across both columns */
+  width: 40%;
+  margin: auto; /* Center horizontally */
+  display: block; /* Make it a block-level element for margin auto to work */
 }
 
 #labelOne {
