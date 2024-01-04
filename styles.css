@@ -205,7 +205,7 @@
 @media only screen and (max-width: 1200px){
 
   .mainTopic {
-    font-size: 8rem;
+    font-size: 5rem;
   }  
 
   #oneInputId {
@@ -247,6 +247,10 @@
 
 
 @media only screen and (max-width: 520px){
+
+  .mainTopic {
+    font-size: 3rem;
+  }  
 
   #oneInputId {
     justify-content: center;
