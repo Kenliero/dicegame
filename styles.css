@@ -234,13 +234,13 @@
   }
 
   #restartButton {
-    font-size: 2rem!important;
-    width: 40%;
+    /*font-size: 2rem!important;*/
+    width: 75%;
   }
 
   #newPlayersButton {
-    font-size: 1.2rem!important;
-    width: 40%;
+    /*font-size: 1.2rem!important;*/
+    width: 75%;
   }
 }
 
@@ -273,13 +273,13 @@
   }
 
   #restartButton {
-    font-size: 1.2rem!important;
-    width: 60%;
+    /*font-size: 1.2rem!important; */
+    width: 100%;
   }
 
   #newPlayersButton {
-    font-size: 0.7rem!important;
-    width: 60%;
+    /*font-size: 0.7rem!important;*/
+    width: 100%;
   }
 
 }
