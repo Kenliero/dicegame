@@ -84,7 +84,26 @@
   text-shadow: 1px 1px 1px rgb(255, 255, 255);
   grid-row: 4;
   grid-column: 1;
-  grid-column: span 2; /* Span across both columns */
+  /*grid-column: span 2; /* Span across both columns */
+  width: 20%;
+  margin: auto; /* Center horizontally */
+  display: block; /* Make it a block-level element for margin auto to work */
+  text-align: center;
+}
+
+#newPlayersButton {
+  font-size: 4rem;
+  height: 12rem;
+  border: 4rem;
+  border-radius: 50%;
+  color: darkblue;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  visibility: hidden;
+  background-color: #25aa6c;
+  text-shadow: 1px 1px 1px rgb(255, 255, 255);
+  grid-row: 4;
+  grid-column: 2;
+  /*grid-column: span 2; /* Span across both columns */
   width: 20%;
   margin: auto; /* Center horizontally */
   display: block; /* Make it a block-level element for margin auto to work */
