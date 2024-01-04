@@ -106,12 +106,13 @@ function addButtons(){
       if (currentdice === 1 && nameTwo === "Giang"){
           if (diceResult2 > 1) {
             dicenum = diceResult2 - 1;
-          } else {
-            dicenum = 1;
           }
           if (dicenum < 1) {
             dicenum = 1;
           }
+          if (dicenum > 5) {
+            dicenum = 5;
+          }          
         }
 
       // Giang Variable dice2:
@@ -124,12 +125,13 @@ function addButtons(){
       if (currentdice === 2 && nameOne === "Giang"){
         if (diceResult1 > 1) {
           dicenum = diceResult1 - 1;
-        } else {
-          dicenum = 1;
         }
         if (dicenum < 1) {
           dicenum = 1;
         }
+        if (dicenum > 5) {
+          dicenum = 5;
+        }   
       }
 
       if (dicenum > 6) {
