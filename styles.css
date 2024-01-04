@@ -77,6 +77,9 @@
 visibility: hidden;
 grid-row: 4;
 grid-column: 1;
+margin: auto;
+display: block;
+text-align: center;
 
 --bs-btn-padding-y: 3rem!important;
 --bs-btn-padding-x: 2.5rem!important;
@@ -112,6 +115,9 @@ text-shadow: 1px 1px 1px rgb(3, 2, 73);
 visibility: hidden;
 grid-row: 4;
 grid-column: 2;
+margin: auto;
+display: block;
+text-align: center;
 
 --bs-btn-padding-y: 3rem!important;
 --bs-btn-padding-x: 2.5rem!important;
