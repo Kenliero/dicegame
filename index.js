@@ -108,17 +108,8 @@ function addButtons(){
         basicElement[i].src = picPath;    
       }
 
-      if (turn1Used && turn2Used) {
-          /* display winner */
-          declareWinner(diceResult1, diceResult2);
-          return;
-        } else if (turn1Used) {
-          /* turn dice 1 yellow */
-          return;
-        } else {
-          /* turn dice 2 yellow */
-          return;
-        }
+      if (turn1Used && turn2Used) {declareWinner(diceResult1, diceResult2);}
+      return;
     }
 
     function declareWinner(dice1, dice2) {
