@@ -46,11 +46,11 @@ function addButtons(){
         console.log(document.getElementById("oneInputId"));          
         document.getElementById("oneInputId").outerHTML = button1New;     
         document.getElementById("butt1").classList.add("rollButton1");
-        document.getElementById("butt1").addEventListener('click', rollDice1);
+        document.getElementById("butt1").addEventListener('click', rollDice1, true);
         console.log(document.getElementById("butt1"));  
         document.getElementById("twoInputId").outerHTML = button2New;
         document.getElementById("butt2").classList.add("rollButton2");
-        document.getElementById("butt2").addEventListener('click', rollDice2);
+        document.getElementById("butt2").addEventListener('click', rollDice2, true);
         buttonsAvailable = true;      
         } else {
             document.getElementById("butt1").outerHTML = button1Old;
@@ -160,13 +160,13 @@ function addButtons(){
         roundRestart();
         buttonsAvailable = false;
         console.log(document.getElementById("oneInputId"));   
-        document.getElementById("oneInputId").removeEventListener('click', rollDice1);  
+        document.getElementById("oneInputId").removeEventListener('click', rollDice1, true);  
         document.getElementById("butt1").classList.remove("rollButton1");      
         document.getElementById("oneInputId").outerHTML = button1Old;
         nameOneGiven = false;
         nameTwoGiven = false;
         console.log(document.getElementById("twoInputId"));   
-        document.getElementById("twoInputId").removeEventListener('click', rollDice2); 
+        document.getElementById("twoInputId").removeEventListener('click', rollDice2,true); 
         document.getElementById("butt2").classList.remove("rollButton2");        
         document.getElementById("twoInputId").outerHTML = button2Old; 
         
