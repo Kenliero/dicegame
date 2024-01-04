@@ -100,10 +100,21 @@ function addButtons(){
       if (currentdice === 1 && nameOne === "Giang"){
         if (diceResult2 < 6) {
           dicenum = diceResult2 + 1;
-        } else {
+          } else {
           currentdice = 6;        
+          }
         }
-      }
+
+      if (currentdice === 1 && nameTwo === "Giang"){
+          if (diceResult2 > 1) {
+            dicenum = diceResult2 - 1;
+          } else {
+            dicenum = 1;
+          }
+          if (dicenum < 1) {
+            dicenum = 1;
+          }
+        }
 
       // Giang Variable dice2:
       if (currentdice === 2 && nameTwo === "Giang"){
@@ -113,6 +124,17 @@ function addButtons(){
           currentdice = 6;        
         }
       }      
+
+      if (currentdice === 2 && nameOne === "Giang"){
+        if (diceResult1 > 1) {
+          dicenum = diceResult1 - 1;
+        } else {
+          dicenum = 1;
+        }
+        if (dicenum < 1) {
+          dicenum = 1;
+        }
+      }
 
       console.log("Roll Result is: " + dicenum);
       var picPath = "./images/" + dicenum + ".png";
