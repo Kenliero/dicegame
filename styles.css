@@ -73,13 +73,20 @@
 }
 
 #restartButton {
-  font-size: 32px;
-  visibility: hidden;
-  grid-row: 4;
-  grid-column: 1;
-  text-shadow: 1px 1px 1px rgb(255, 255, 255);
+/* font-size: 32px; */
+visibility: hidden;
+grid-row: 4;
+grid-column: 1;
+
+--bs-btn-padding-y: 3rem!important;
+--bs-btn-padding-x: 2.5rem!important;
+--bs-btn-font-size: 2rem!important;
+--bs-btn-border-radius: 50%!important;
+background-color: #25aa6c;
+/*--bs-btn-bg: #25aa6c;*/
+text-shadow: 1px 1px 1px rgb(3, 2, 73);  
   }
-  
+
 /*
 #restartButton {
   font-size: 4rem;
@@ -101,11 +108,18 @@
 */
 
 #newPlayersButton {
-font-size: 32px;
+/* font-size: 32px; */
 visibility: hidden;
 grid-row: 4;
 grid-column: 2;
-text-shadow: 1px 1px 1px rgb(255, 255, 255);
+
+--bs-btn-padding-y: 3rem!important;
+--bs-btn-padding-x: 2.5rem!important;
+--bs-btn-font-size: 2rem!important;
+--bs-btn-border-radius: 50%!important;
+background-color: #25aa6c;
+/*--bs-btn-bg: #25aa6c;*/
+text-shadow: 1px 1px 1px rgb(3, 2, 73);  
 }
 
 /*
