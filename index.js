@@ -129,14 +129,14 @@ function addButtons(){
       document.getElementsByClassName('mainTopic')[0].outerHTML = winnerTopic;
       /* log */
       console.log(document.getElementsByClassName('mainTopic')[0].outerHTML);  
-      document.getElementsByClassName('mainTopic')[0].classList.toggle("winnerTopic"); 
+      document.getElementsByClassName('mainTopic')[0].classList.add("winnerTopic"); 
       document.getElementById("restartButton").style.visibility = "visible";          
       }
 
       function restartEvent() {
         var winnerTopic = <h1 class='display-7 fw-bold mainTopic'>Dice Game for Two</h1>;
         document.getElementsByClassName('mainTopic')[0].outerHTML = winnerTopic;
-        document.getElementsByClassName('mainTopic')[0].classList.toggle("winnerTopic");
+        document.getElementsByClassName('mainTopic')[0].classList.remove("winnerTopic");
         document.getElementById("restartButton").style.visibility = "hidden";
         roundRestart(); 
       }
