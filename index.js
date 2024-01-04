@@ -9,8 +9,8 @@ let button2New="<button onclick='rollDice2()' id='butt2' class='btn btn-success 
 let buttonsAvailable = false;
 let turn1Used = false;
 let turn2Used = false;
-let diceResult1 = 6;
-let diceResult2 = 6;
+let diceResult1 = 0;
+let diceResult2 = 0;
 let nameOne = "";
 let nameTwo = "";
 let score1 = 0;
@@ -142,9 +142,9 @@ function addButtons(){
         turn2Used = false;
         document.getElementById("butt1").style.backgroundColor = "#25aa6c";
         document.getElementById("butt2").style.backgroundColor = "#25aa6c";
-        diceResult1 = 6;
-        diceResult2 = 6;
-        var picPath = "./images/6.png";
+        diceResult1 = 0;
+        diceResult2 = 0;
+        var picPath = "./images/0.png";
         var basicElement = document.getElementsByClassName("dicePicOne");
         for (var i = 0; i < basicElement.length; i++) {
           basicElement[i].src = picPath;  
