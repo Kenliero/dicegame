@@ -122,11 +122,11 @@ function addButtons(){
     }
 
     function declareWinner(dice1, dice2) {
-      if (dice1 === dice2) {var winnerTopic ="<h1 class='display-7 fw-bold mainTopic'>DRAW!!!</h1>";
-        } else if (dice1 > dice2) {var winnerTopic ="<h1 class='display-7 fw-bold mainTopic'>" + "The Winner is: " + nameOne + "!!!</h1>";
-        } else {var winnerTopic ="<h1 class='display-7 fw-bold mainTopic'>" + "The Winner is: " + nameTwo + "!!!</h1>";
+      if (dice1 === dice2) {var currentTopic ="<h1 class='display-7 fw-bold mainTopic'>DRAW!!!</h1>";
+        } else if (dice1 > dice2) {var currentTopic ="<h1 class='display-7 fw-bold mainTopic'>" + "The Winner is: " + nameOne + "!!!</h1>";
+        } else {var currentTopic ="<h1 class='display-7 fw-bold mainTopic'>" + "The Winner is: " + nameTwo + "!!!</h1>";
         }
-      document.getElementsByClassName('mainTopic')[0].outerHTML = winnerTopic;
+      document.getElementsByClassName('mainTopic')[0].outerHTML = currentTopic;
       /* log */
       console.log(document.getElementsByClassName('mainTopic')[0].outerHTML);  
       document.getElementsByClassName('mainTopic')[0].classList.add("winnerTopic"); 
@@ -134,8 +134,8 @@ function addButtons(){
       }
 
       function restartEvent() {
-        var winnerTopic = <h1 class='display-7 fw-bold mainTopic'>Dice Game for Two</h1>;
-        document.getElementsByClassName('mainTopic')[0].outerHTML = winnerTopic;
+        var currentTopic = <h1 class='display-7 fw-bold mainTopic'>Dice Game for Two</h1>;
+        document.getElementsByClassName('mainTopic')[0].outerHTML = currentTopic;
         document.getElementsByClassName('mainTopic')[0].classList.remove("winnerTopic");
         document.getElementById("restartButton").style.visibility = "hidden";
         roundRestart(); 
