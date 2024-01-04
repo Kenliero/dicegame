@@ -73,80 +73,36 @@
 }
 
 #restartButton {
-/* font-size: 32px; */
-visibility: hidden;
-grid-row: 4;
-grid-column: 1;
-margin: auto;
-display: block;
-text-align: center;
-
---bs-btn-padding-y: 3rem!important;
---bs-btn-padding-x: 2.5rem!important;
---bs-btn-font-size: 2rem!important;
---bs-btn-border-radius: 50%!important;
-background-color: #25aa6c;
-/*--bs-btn-bg: #25aa6c;*/
-text-shadow: 1px 1px 1px rgb(3, 2, 73);  
-  }
-
-/*
-#restartButton {
-  font-size: 4rem;
-  height: 10rem;
-  border: 4rem;
-  border-radius: 50%;
-  color: darkblue;
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   visibility: hidden;
-  background-color: #25aa6c;
-  text-shadow: 1px 1px 1px rgb(255, 255, 255);
   grid-row: 4;
   grid-column: 1;
-  width: 40%;
   margin: auto;
   display: block;
   text-align: center;
-}
-*/
-
-#newPlayersButton {
-/* font-size: 32px; */
-visibility: hidden;
-grid-row: 4;
-grid-column: 2;
-margin: auto;
-display: block;
-text-align: center;
-
---bs-btn-padding-y: 3rem!important;
---bs-btn-padding-x: 2.5rem!important;
---bs-btn-font-size: 2rem!important;
---bs-btn-border-radius: 50%!important;
-background-color: #25aa6c;
-/*--bs-btn-bg: #25aa6c;*/
-text-shadow: 1px 1px 1px rgb(3, 2, 73);  
-}
-
-/*
-#newPlayersButton {
-  font-size: 3rem;
-  height: 19rem;
-  border: 4rem;
-  border-radius: 50%;
-  color: darkblue;
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  visibility: hidden;
+  --bs-btn-padding-y: 3rem!important;
+  --bs-btn-padding-x: 2.5rem!important;
+  --bs-btn-font-size: 2rem!important;
+  --bs-btn-border-radius: 50%!important;
   background-color: #25aa6c;
-  text-shadow: 1px 1px 1px rgb(255, 255, 255);
+  /*--bs-btn-bg: #25aa6c;*/
+  text-shadow: 1px 1px 1px rgb(3, 2, 73);  
+  }
+
+#newPlayersButton {
+  visibility: hidden;
   grid-row: 4;
   grid-column: 2;
-  width: 40%;
   margin: auto;
   display: block;
   text-align: center;
+  --bs-btn-padding-y: 3rem!important;
+  --bs-btn-padding-x: 2.5rem!important;
+  --bs-btn-font-size: 2rem!important;
+  --bs-btn-border-radius: 50%!important;
+  background-color: #25aa6c;
+  /*--bs-btn-bg: #25aa6c;*/
+  text-shadow: 1px 1px 1px rgb(3, 2, 73);  
 }
-*/
 
 #labelOne {
   grid-column: 1 / 2;
@@ -202,8 +158,8 @@ text-shadow: 1px 1px 1px rgb(3, 2, 73);
   display: inline-flex;
   grid-column: 1 / 2;
   grid-row: 3 / 4;  
-  width: 400px;
-  height: 400px;     
+  width: 350px;
+  height: 350px;     
   margin: auto;
 }
 
@@ -211,8 +167,8 @@ text-shadow: 1px 1px 1px rgb(3, 2, 73);
   display: inline-flex;
   grid-column: 2 / 3;
   grid-row: 3 / 4;  
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
   margin: auto;
 }
 
@@ -266,15 +222,15 @@ text-shadow: 1px 1px 1px rgb(3, 2, 73);
   .dicePicOne {
     margin: auto;
     display: inline-flex;
-    width: 250px;
-    height: 250px;     
+    width: 200px;
+    height: 200px;     
   }
   
   .dicePicTwo {
     margin: auto;
     display: inline-flex;
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
   }
 
   #restartButton {
@@ -283,7 +239,7 @@ text-shadow: 1px 1px 1px rgb(3, 2, 73);
   }
 
   #newPlayersButton {
-    font-size: 1.4rem!important;
+    font-size: 1.2rem!important;
     width: 40%;
   }
 }
@@ -305,15 +261,15 @@ text-shadow: 1px 1px 1px rgb(3, 2, 73);
   .dicePicOne {
     margin: auto;
     display: inline-flex;
-    width: 130px;
-    height: 130px;     
+    width: 110px;
+    height: 110px;     
   }
 
   .dicePicTwo {
     margin: auto;
     display: inline-flex;
-    width: 130px;
-    height: 130px;
+    width: 110px;
+    height: 110px;
   }
 
   #restartButton {
@@ -322,7 +278,7 @@ text-shadow: 1px 1px 1px rgb(3, 2, 73);
   }
 
   #newPlayersButton {
-    font-size: 0.8rem!important;
+    font-size: 0.7rem!important;
     width: 60%;
   }
 
