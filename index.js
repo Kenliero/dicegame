@@ -98,6 +98,9 @@ function addButtons(){
 
       // Giang Variable dice1:
       if (currentdice === 1 && nameOne === "Giang"){
+        if (dicenum === 1) {
+          dicenum++;
+        }
         if (dicenum < diceResult2) {
           dicenum = diceResult2 + 1;
           }
@@ -117,6 +120,9 @@ function addButtons(){
 
       // Giang Variable dice2:
       if (currentdice === 2 && nameTwo === "Giang"){
+        if (dicenum === 1) {
+          dicenum++;
+        }        
         if (dicenum < diceResult1) {
           dicenum = diceResult1 + 1;
         } 
