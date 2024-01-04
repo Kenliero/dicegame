@@ -98,10 +98,8 @@ function addButtons(){
 
       // Giang Variable dice1:
       if (currentdice === 1 && nameOne === "Giang"){
-        if (diceResult2 < 6) {
+        if (dicenum < diceResult2) {
           dicenum = diceResult2 + 1;
-          } else {
-          currentdice = 6;        
           }
         }
 
@@ -118,11 +116,9 @@ function addButtons(){
 
       // Giang Variable dice2:
       if (currentdice === 2 && nameTwo === "Giang"){
-        if (diceResult1 < 6) {
+        if (dicenum < diceResult1) {
           dicenum = diceResult1 + 1;
-        } else {
-          currentdice = 6;        
-        }
+        } 
       }      
 
       if (currentdice === 2 && nameOne === "Giang"){
@@ -134,6 +130,10 @@ function addButtons(){
         if (dicenum < 1) {
           dicenum = 1;
         }
+      }
+
+      if (dicenum > 6) {
+        dicenum = 6;
       }
 
       console.log("Roll Result is: " + dicenum);
