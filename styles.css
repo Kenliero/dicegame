@@ -92,7 +92,7 @@
 }
 
 #newPlayersButton {
-  font-size: 4rem;
+  font-size: 3rem;
   height: 12rem;
   border: 4rem;
   border-radius: 50%;
@@ -243,7 +243,12 @@
     font-size: 2rem!important;
   }
 
+  #newPlayersButton {
+    font-size: 1.4rem!important;
+
+  }
 }
+
 
 
 @media only screen and (max-width: 520px){
@@ -274,6 +279,10 @@
 
   #restartButton {
     font-size: 1.2rem!important;
+  }
+
+  #newPlayersButton {
+    font-size: 0.8rem!important;
   }
 
 }
