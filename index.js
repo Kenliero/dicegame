@@ -132,3 +132,25 @@ function addButtons(){
       document.getElementsByClassName('mainTopic')[0].classList.toggle("winnerTopic"); 
       document.getElementById("restartButton").style.visibility = "visible";          
       }
+
+      function restartEvent() {
+        var winnerTopic = <h1 class='display-7 fw-bold mainTopic'>Dice Game for Two</h1>;
+        document.getElementsByClassName('mainTopic')[0].outerHTML = winnerTopic;
+        document.getElementsByClassName('mainTopic')[0].classList.toggle("winnerTopic");
+        document.getElementById("restartButton").style.visibility = "hidden"; 
+      }
+
+      function pageInit() {
+        buttonsAvailable = false;
+        turn1Used = false;
+        turn2Used = false;
+        console.log(document.getElementById("oneInputId"));          
+        document.getElementById("oneInputId").outerHTML = button1Old;
+        document.getElementById("oneInputId").removeEventListener('click', rollDice1);
+        document.getElementById("butt1").classList.remove("rollButton1"); 
+
+        console.log(document.getElementById("twoInputId"));          
+        document.getElementById("oneInputId").outerHTML = button2Old;
+        document.getElementById("twoInputId").removeEventListener('click', rollDice2);   
+        document.getElementById("butt1").classList.remove("rollButton1");
+      }
