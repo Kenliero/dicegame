@@ -73,6 +73,15 @@
 }
 
 #restartButton {
+  font-size: 32px;
+  visibility: hidden;
+  grid-row: 4;
+  grid-column: 1;
+  text-shadow: 1px 1px 1px rgb(255, 255, 255);
+  }
+  
+/*
+#restartButton {
   font-size: 4rem;
   height: 10rem;
   border: 4rem;
@@ -84,13 +93,22 @@
   text-shadow: 1px 1px 1px rgb(255, 255, 255);
   grid-row: 4;
   grid-column: 1;
-  /*grid-column: span 2; /* Span across both columns */
   width: 40%;
-  margin: auto; /* Center horizontally */
-  display: block; /* Make it a block-level element for margin auto to work */
+  margin: auto;
+  display: block;
   text-align: center;
 }
+*/
 
+#newPlayersButton {
+font-size: 32px;
+visibility: hidden;
+grid-row: 4;
+grid-column: 2;
+text-shadow: 1px 1px 1px rgb(255, 255, 255);
+}
+
+/*
 #newPlayersButton {
   font-size: 3rem;
   height: 19rem;
@@ -103,12 +121,12 @@
   text-shadow: 1px 1px 1px rgb(255, 255, 255);
   grid-row: 4;
   grid-column: 2;
-  /*grid-column: span 2; /* Span across both columns */
   width: 40%;
-  margin: auto; /* Center horizontally */
-  display: block; /* Make it a block-level element for margin auto to work */
+  margin: auto;
+  display: block;
   text-align: center;
 }
+*/
 
 #labelOne {
   grid-column: 1 / 2;

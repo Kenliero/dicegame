@@ -159,17 +159,16 @@ function addButtons(){
         restartEvent()
         roundRestart();
         buttonsAvailable = false;
-        console.log(document.getElementById("oneInputId"));          
+        console.log(document.getElementById("oneInputId"));   
+        document.getElementById("oneInputId").removeEventListener('click', rollDice1);  
+        document.getElementById("butt1").classList.remove("rollButton1");      
         document.getElementById("oneInputId").outerHTML = button1Old;
-        document.getElementById("oneInputId").removeEventListener('click', rollDice1);
-        document.getElementById("butt1").classList.remove("rollButton1"); 
-
         nameOneGiven = false;
         nameTwoGiven = false;
-        console.log(document.getElementById("twoInputId"));          
-        document.getElementById("oneInputId").outerHTML = button2Old;
-        document.getElementById("twoInputId").removeEventListener('click', rollDice2);   
-        document.getElementById("butt1").classList.remove("rollButton1");
+        console.log(document.getElementById("twoInputId"));   
+        document.getElementById("twoInputId").removeEventListener('click', rollDice2); 
+        document.getElementById("butt2").classList.remove("rollButton2");        
+        document.getElementById("twoInputId").outerHTML = button2Old; 
         
         var myLabel = "<label id='labelOne'>Input The Name of Player One:</label>";
         document.getElementById("labelOne").outerHTML = myLabel;
