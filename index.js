@@ -2,17 +2,19 @@ let nameOneGiven = false;
 let nameTwoGiven = false;
 //const eButtonOne = document.getElementById("oneInputId");
 //const eButtonTwo = document.getElementById("twoInputId");
-var button1Old="<input type='text' id='oneInputId' placeholder='Your Name' onchange='getNameOne()'>";
-var button2Old="<input type='text' id='twoInputId' placeholder='Your Name' onchange='getNameTwo()'>";
-var button1New="<button onclick='rollDice1()' id='butt1' class='btn btn-success border-dark btn-lg px-4 mb-4'>Roll Dice One</button>"
-var button2New="<button onclick='rollDice2()' id='butt2' class='btn btn-success border-dark btn-lg px-4 mb-4'>Roll Dice Two</button>"
+let button1Old="<input type='text' id='oneInputId' placeholder='Your Name' onchange='getNameOne()'>";
+let button2Old="<input type='text' id='twoInputId' placeholder='Your Name' onchange='getNameTwo()'>";
+let button1New="<button onclick='rollDice1()' id='butt1' class='btn btn-success border-dark btn-lg px-4 mb-4'>Roll Dice One</button>"
+let button2New="<button onclick='rollDice2()' id='butt2' class='btn btn-success border-dark btn-lg px-4 mb-4'>Roll Dice Two</button>"
 let buttonsAvailable = false;
 let turn1Used = false;
 let turn2Used = false;
-var diceResult1 = 6;
-var diceResult2 = 6;
-var nameOne = "";
-var nameTwo = "";
+let diceResult1 = 6;
+let diceResult2 = 6;
+let nameOne = "";
+let nameTwo = "";
+let score1 = 0;
+let score2 = 0;
 
 
 function getNameOne() {
