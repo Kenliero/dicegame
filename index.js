@@ -137,13 +137,17 @@ function addButtons(){
         var winnerTopic = <h1 class='display-7 fw-bold mainTopic'>Dice Game for Two</h1>;
         document.getElementsByClassName('mainTopic')[0].outerHTML = winnerTopic;
         document.getElementsByClassName('mainTopic')[0].classList.toggle("winnerTopic");
-        document.getElementById("restartButton").style.visibility = "hidden"; 
+        document.getElementById("restartButton").style.visibility = "hidden";
+        roundRestart(); 
       }
 
-      function pageInit() {
-        buttonsAvailable = false;
+      function roundRestart() {
         turn1Used = false;
         turn2Used = false;
+        document.getElementById("butt1").style.backgroundColor = "#25aa6c";
+        document.getElementById("butt2").style.backgroundColor = "green";
+        /*
+        buttonsAvailable = false;
         console.log(document.getElementById("oneInputId"));          
         document.getElementById("oneInputId").outerHTML = button1Old;
         document.getElementById("oneInputId").removeEventListener('click', rollDice1);
@@ -153,4 +157,10 @@ function addButtons(){
         document.getElementById("oneInputId").outerHTML = button2Old;
         document.getElementById("twoInputId").removeEventListener('click', rollDice2);   
         document.getElementById("butt1").classList.remove("rollButton1");
-      }
+        
+        //var myLabel = "<label id='labelOne'>Input The Name of Player One:</label>";
+        //document.getElementById("labelOne").outerHTML = myLabel;
+        //myLabel = "<label id='labelTwo'>Input The Name of Player Two:</label>";
+        //document.getElementById("labelTwo").outerHTML = myLabel;
+        */
+        }
