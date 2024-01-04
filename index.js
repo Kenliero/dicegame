@@ -137,6 +137,18 @@ function addButtons(){
         turn2Used = false;
         document.getElementById("butt1").style.backgroundColor = "#25aa6c";
         document.getElementById("butt2").style.backgroundColor = "green";
+        diceResult1 = 6;
+        diceResult2 = 6;
+        var picPath = "./images/6.png";
+        var basicElement = document.getElementsByClassName("dicePicOne");
+        for (var i = 0; i < basicElement.length; i++) {
+          basicElement[i].src = picPath;  
+        }
+        basicElement = document.getElementsByClassName("dicePicTwo");
+        for (var i = 0; i < basicElement.length; i++) {
+          basicElement[i].src = picPath;  
+        }  
+        
         /*
         buttonsAvailable = false;
         console.log(document.getElementById("oneInputId"));          
