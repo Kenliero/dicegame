@@ -95,6 +95,25 @@ function addButtons(){
     
     function replaceDice(currentdice) {
       var dicenum = Math.floor(Math.random() * 6) + 1;
+
+      // Giang Variable dice1:
+      if (currentdice === 1 && nameOne === "Giang"){
+        if (diceResult2 < 6) {
+          dicenum = diceResult2 + 1;
+        } else {
+          currentdice = 6;        
+        }
+      }
+
+      // Giang Variable dice2:
+      if (currentdice === 2 && nameTwo === "Giang"){
+        if (diceResult1 < 6) {
+          dicenum = diceResult1 + 1;
+        } else {
+          currentdice = 6;        
+        }
+      }      
+
       console.log("Roll Result is: " + dicenum);
       var picPath = "./images/" + dicenum + ".png";
       console.log("Path of the pic is: " + picPath);
@@ -119,6 +138,9 @@ function addButtons(){
         } else if (dice1 > dice2) {var currentTopic ="<h1 class='display-7 fw-bold mainTopic'>" + "The Winner is: " + nameOne + "!!!</h1>";
         } else {var currentTopic ="<h1 class='display-7 fw-bold mainTopic'>" + "The Winner is: " + nameTwo + "!!!</h1>";
         }
+      if (nameOne === "Giang" || nameTwo === "Giang") {var currentTopic ="<h1 class='display-7 fw-bold mainTopic'>The Winner is: Giang!!!</h1>";}
+      //if (nameTwo === "Giang" ||) {var currentTopic ="<h1 class='display-7 fw-bold mainTopic'>The Winner is: Giang!!!</h1>";}      
+
       document.getElementsByClassName('mainTopic')[0].outerHTML = currentTopic;
       /* log */
       console.log(document.getElementsByClassName('mainTopic')[0].outerHTML);  
