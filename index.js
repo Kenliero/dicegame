@@ -151,22 +151,26 @@ function addButtons(){
         for (var i = 0; i < basicElement.length; i++) {
           basicElement[i].src = picPath;  
         }  
+      }
 
-        /*
+      function newPlayers() {
+        restartEvent()
+        roundRestart();
         buttonsAvailable = false;
         console.log(document.getElementById("oneInputId"));          
         document.getElementById("oneInputId").outerHTML = button1Old;
         document.getElementById("oneInputId").removeEventListener('click', rollDice1);
         document.getElementById("butt1").classList.remove("rollButton1"); 
 
+        nameOneGiven = false;
+        nameTwoGiven = false;
         console.log(document.getElementById("twoInputId"));          
         document.getElementById("oneInputId").outerHTML = button2Old;
         document.getElementById("twoInputId").removeEventListener('click', rollDice2);   
         document.getElementById("butt1").classList.remove("rollButton1");
         
-        //var myLabel = "<label id='labelOne'>Input The Name of Player One:</label>";
-        //document.getElementById("labelOne").outerHTML = myLabel;
-        //myLabel = "<label id='labelTwo'>Input The Name of Player Two:</label>";
-        //document.getElementById("labelTwo").outerHTML = myLabel;
-        */
-        }
+        var myLabel = "<label id='labelOne'>Input The Name of Player One:</label>";
+        document.getElementById("labelOne").outerHTML = myLabel;
+        myLabel = "<label id='labelTwo'>Input The Name of Player Two:</label>";
+        document.getElementById("labelTwo").outerHTML = myLabel;
+      }
