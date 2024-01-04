@@ -121,7 +121,9 @@ function addButtons(){
       /* log */
       console.log(document.getElementsByClassName('mainTopic')[0].outerHTML);  
       document.getElementsByClassName('mainTopic')[0].classList.add("winnerTopic"); 
-      document.getElementById("restartButton").style.visibility = "visible";          
+      document.getElementById("restartButton").style.visibility = "visible";
+      document.getElementById("newPlayersButton").style.visibility = "visible";
+                
       }
 
       function restartEvent() {
@@ -129,6 +131,7 @@ function addButtons(){
         document.getElementsByClassName('mainTopic')[0].outerHTML = currentTopic;
         document.getElementsByClassName('mainTopic')[0].classList.remove("winnerTopic");
         document.getElementById("restartButton").style.visibility = "hidden";
+        document.getElementById("newPlayersButton").style.visibility = "hidden";
         roundRestart(); 
       }
 
@@ -136,7 +139,7 @@ function addButtons(){
         turn1Used = false;
         turn2Used = false;
         document.getElementById("butt1").style.backgroundColor = "#25aa6c";
-        document.getElementById("butt2").style.backgroundColor = "green";
+        document.getElementById("butt2").style.backgroundColor = "#25aa6c";
         diceResult1 = 6;
         diceResult2 = 6;
         var picPath = "./images/6.png";
@@ -148,7 +151,7 @@ function addButtons(){
         for (var i = 0; i < basicElement.length; i++) {
           basicElement[i].src = picPath;  
         }  
-        
+
         /*
         buttonsAvailable = false;
         console.log(document.getElementById("oneInputId"));          
