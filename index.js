@@ -125,7 +125,7 @@ function addButtons(){
       }
 
       function restartEvent() {
-        var currentTopic = <h1 class='display-7 fw-bold mainTopic'>Dice Game for Two</h1>;
+        var currentTopic = "<h1 class='display-7 fw-bold mainTopic'>Dice Game for Two</h1>";
         document.getElementsByClassName('mainTopic')[0].outerHTML = currentTopic;
         document.getElementsByClassName('mainTopic')[0].classList.remove("winnerTopic");
         document.getElementById("restartButton").style.visibility = "hidden";
